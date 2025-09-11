@@ -168,54 +168,55 @@
             <div class="container mx-auto px-6">
                 <h2 class="section-title">Certifications</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                     <a href="REPLACE_WITH_PUBLIC_LINK_TO_YOUR_PDF" download="Python-Django-Certificate.pdf" class="glass-card p-5 flex items-center space-x-4 w-full block group">
+                    <!-- NOTE: Make sure the image filenames match what you have in your 'src/certificates' folder -->
+                     <a href="#" class="certificate-link glass-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/Python-Django-Certificate.png">
                         <div class="bg-brand/10 text-brand rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
                         <div class="flex-grow">
                             <h3 class="font-bold text-slate-200">The Complete Django Web Development Course</h3>
                             <p class="text-slate-400">Udemy</p>
                         </div>
                          <div class="text-slate-500 group-hover:text-brand transition-colors">
-                           <i class="ri-download-2-line text-xl"></i>
+                           <i class="ri-eye-line text-xl"></i>
                         </div>
                     </a>
-                     <a href="REPLACE_WITH_PUBLIC_LINK_TO_YOUR_PDF" download="AI-for-Beginners-Certificate.pdf" class="glass-card p-5 flex items-center space-x-4 w-full block group">
+                     <a href="#" class="certificate-link glass-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/AI-for-Beginners-Certificate.png">
                         <div class="bg-brand/10 text-brand rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
                         <div class="flex-grow">
                             <h3 class="font-bold text-slate-200">AI for Beginners</h3>
                             <p class="text-slate-400">HP LIFE</p>
                         </div>
                          <div class="text-slate-500 group-hover:text-brand transition-colors">
-                           <i class="ri-download-2-line text-xl"></i>
+                           <i class="ri-eye-line text-xl"></i>
                         </div>
                     </a>
-                     <a href="REPLACE_WITH_PUBLIC_LINK_TO_YOUR_PDF" download="Developer-Technology-Simulation-Certificate.pdf" class="glass-card p-5 flex items-center space-x-4 w-full block group">
+                     <a href="#" class="certificate-link glass-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/Developer-Technology-Simulation-Certificate.png">
                         <div class="bg-brand/10 text-brand rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
                         <div class="flex-grow">
                             <h3 class="font-bold text-slate-200">Developer and Technology Job Simulation</h3>
                             <p class="text-slate-400">Forage / Accenture</p>
                         </div>
                          <div class="text-slate-500 group-hover:text-brand transition-colors">
-                           <i class="ri-download-2-line text-xl"></i>
+                           <i class="ri-eye-line text-xl"></i>
                         </div>
                     </a>
-                    <a href="REPLACE_WITH_PUBLIC_LINK_TO_YOUR_PDF" download="Software-Engineering-Simulation-Certificate.pdf" class="glass-card p-5 flex items-center space-x-4 w-full block group">
+                    <a href="#" class="certificate-link glass-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/Software-Engineering-Simulation-Certificate.png">
                         <div class="bg-brand/10 text-brand rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
                         <div class="flex-grow">
                             <h3 class="font-bold text-slate-200">Software Engineering Job Simulation</h3>
                             <p class="text-slate-400">Forage / Hewlett Packard Enterprise</p>
                         </div>
                          <div class="text-slate-500 group-hover:text-brand transition-colors">
-                           <i class="ri-download-2-line text-xl"></i>
+                           <i class="ri-eye-line text-xl"></i>
                         </div>
                     </a>
-                    <a href="REPLACE_WITH_PUBLIC_LINK_TO_YOUR_PDF" download="Git-GitHub-Bootcamp-Certificate.pdf" class="glass-card p-5 flex items-center space-x-4 w-full block group">
+                    <a href="#" class="certificate-link glass-card p-5 flex items-center space-x-4 w-full block group" data-certificate-src="src/certificates/Git-GitHub-Bootcamp-Certificate.png">
                         <div class="bg-brand/10 text-brand rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0"><i class="ri-award-fill text-2xl"></i></div>
                         <div class="flex-grow">
                             <h3 class="font-bold text-slate-200">Git & GitHub Bootcamp</h3>
                             <p class="text-slate-400">LetsUpgrade</p>
                         </div>
                          <div class="text-slate-500 group-hover:text-brand transition-colors">
-                           <i class="ri-download-2-line text-xl"></i>
+                           <i class="ri-eye-line text-xl"></i>
                         </div>
                     </a>
                 </div>
@@ -259,6 +260,15 @@
             <p>&copy; 2025 GOBU. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-[999] hidden">
+        <div class="bg-slate-800 p-2 rounded-lg max-w-4xl max-h-[90vh] relative shadow-2xl shadow-cyan-500/20">
+            <img id="modal-img" src="" alt="Certificate" class="object-contain max-w-full max-h-[85vh] rounded-md">
+            <button id="modal-close-button" class="absolute -top-4 -right-4 text-slate-300 bg-slate-800 rounded-full h-10 w-10 flex items-center justify-center hover:bg-brand hover:text-slate-900 transition-colors text-2xl leading-none">&times;</button>
+        </div>
+    </div>
+
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
