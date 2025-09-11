@@ -45,7 +45,7 @@ Google Fonts: For the 'Inter' typeface.
 To run this project locally, simply download or clone the repository and open the index.html file in your web browser.
 
 # Clone the repository
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/GOBU-M/portfolio-.git)
 
 # Navigate to the project directory
 cd your-repo-name
