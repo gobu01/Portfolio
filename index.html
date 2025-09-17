@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOBU | Full-Stack Developer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f172a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='60' font-weight='bold' fill='%2338bdf8' font-family='Inter, sans-serif'%3EG%3C/text%3E%3C/svg%3E">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -53,19 +54,19 @@
                     <h1 class="text-6xl md:text-8xl font-extrabold text-sky-400 tracking-tighter mb-4">GOBU</h1>
                     <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6">Full-Stack Developer</h2>
                     <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl">
-                        I create end-to-end web solutions using modern technologies and best practices. From responsive frontends to scalable backend systems, I build robust applications that deliver exceptional user experiences.
+                      I develop end-to-end web solutions by utilizing modern technologies and adhering to best practices. From creating responsive frontends to building scalable backend systems, I focus on crafting robust applications that offer users an amazing experience.
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="#contact" class="action-button">
                             Get In Touch
                         </a>
-                        <a href="#" class="action-button-outlined">
+                        <a href="src/Resume/Resume.pdf" download="Resume.pdf" class="action-button-outlined">
                             <i class="ri-download-2-line mr-2"></i> Download Resume
                         </a>
                     </div>
                     <div class="mt-12 flex space-x-6">
-                        <a href="#" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-github-fill text-3xl"></i></a>
-                        <a href="#" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-linkedin-box-fill text-3xl"></i></a>
+                        <a href="https://github.com/GOBU-M" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-github-fill text-3xl"></i></a>
+                        <a href="https://www.linkedin.com/in/gobu-m-154b13282/" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-linkedin-box-fill text-3xl"></i></a>
                         <a href="mailto:mgobu413@gmail.com" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-mail-fill text-3xl"></i></a>
                     </div>
                 </div>
@@ -80,10 +81,14 @@
                     <img src="https://placehold.co/250x250/1e293b/38bdf8?text=G" alt="Portrait of Gobu" class="rounded-full w-48 h-48 md:w-56 md:h-56 shadow-lg flex-shrink-0 border-4 border-sky-500/50">
                     <div class="text-center md:text-left">
                         <p class="text-lg text-slate-400 mb-4">
-                            Hello! I'm Gobu, a dedicated Full-Stack Developer with a passion for building intuitive and efficient web applications. My journey in tech started with a fascination for how things work, which led me to dive deep into both front-end and back-end development.
+                           Hello! I'm Gobu, a full-time Full-Stack Developer who loves creating user-friendly and effective web applications. I began my tech journey with an interest in how things function, and this curiosity propelled me into exploring both the front-end and back-end of development.
+
+I live for problem-solving and constant learning of new technologies. My aim is to utilize my abilities to design meaningful products that are technically correct and user-friendly as well.
                         </p>
                         <p class="text-lg text-slate-400">
-                            I thrive on solving complex problems and continuously learning new technologies. My goal is to leverage my skills to create meaningful products that are both user-friendly and technically sound. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.
+                            I specialize in creating dynamic and interactive UI/UX experience. I stay up to date with the latest tools and techniques and worked on a wide range of projects, from personal websites to large-scale applications, sharpening my problem solving skills and fostering creativity.
+
+If you're seeking a dedicated and passionate web developer, I'm eager to collaborate with you. Let's bring your ideas to life!
                         </p>
                     </div>
                  </div>
@@ -226,31 +231,33 @@
                 <h2 class="section-title">Contact Information</h2>
                 <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                     <!-- Contact Form -->
-                    <div>
+                   <div>
                         <h3 class="text-2xl font-bold text-slate-100 mb-6">Send a Message</h3>
-                        <form action="#" class="space-y-6">
+                        <form action="https://formspree.io/f/xjkeqokw" method="POST" class="space-y-6">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label for="name" class="block text-sm font-medium text-slate-400 mb-2">Name</label>
-                                    <input type="text" id="name" placeholder="Your full name" class="form-input">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" class="form-input" required>
                                 </div>
                                 <div>
                                     <label for="email" class="block text-sm font-medium text-slate-400 mb-2">Email</label>
-                                    <input type="email" id="email" placeholder="your.email@example.com" class="form-input">
+                                    <input type="email" id="email" name="email" placeholder="Your Email ID" class="form-input" required>
                                 </div>
                             </div>
                             <div>
                                 <label for="subject" class="block text-sm font-medium text-slate-400 mb-2">Subject</label>
-                                <input type="text" id="subject" placeholder="Project discussion, collaboration, etc." class="form-input">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" class="form-input" required>
                             </div>
                             <div>
                                 <label for="message" class="block text-sm font-medium text-slate-400 mb-2">Message</label>
-                                <textarea id="message" rows="5" placeholder="Tell me about your project..." class="form-input"></textarea>
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message..." class="form-input" required></textarea>
                             </div>
                             <div>
                                 <button type="submit" class="action-button w-full">Send Message</button>
                             </div>
                         </form>
+                        <!-- Form Status Message -->
+                        <div id="form-status" class="mt-4 text-center text-sm"></div>
                     </div>
                     <!-- Contact Details -->
                     <div class="space-y-8">
@@ -277,8 +284,9 @@
                             </div>
                         </div>
                         <div class="mt-8 pt-8 border-t border-slate-800 flex space-x-6">
-                           <a href="#" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-github-fill text-3xl"></i></a>
-                           <a href="#" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-linkedin-box-fill text-3xl"></i></a>
+                           <a href="https://github.com/GOBU-M" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-github-fill text-3xl"></i></a>
+                           <a href="https://www.linkedin.com/in/gobu-m-154b13282/" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-linkedin-box-fill text-3xl"></i></a>
+                           <a href="mailto:mgobu413@gmail.com" class="text-slate-400 hover:text-sky-400 transition-colors"><i class="ri-mail-fill text-3xl"></i></a>
                        </div>
                     </div>
                 </div>
@@ -290,13 +298,9 @@
     <footer class="border-t border-slate-800">
         <div class="container mx-auto px-6 py-6 text-center text-slate-500">
              <div class="mb-4">
-                <h4 class="font-semibold text-slate-400 mb-2">Download Source Code</h4>
+                
                 <div class="flex justify-center space-x-4">
-                    <a href="#" id="download-html" class="hover:text-sky-400 transition-colors">HTML</a>
-                    <span>&middot;</span>
-                    <a href="style.css" download="style.css" class="hover:text-sky-400 transition-colors">CSS</a>
-                    <span>&middot;</span>
-                    <a href="script.js" download="script.js" class="hover:text-sky-400 transition-colors">JavaScript</a>
+                    
                 </div>
             </div>
             <p>&copy; 2025 GOBU. All Rights Reserved.</p>
@@ -317,4 +321,3 @@
 </body>
 </html>
 </html>
-
