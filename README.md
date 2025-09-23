@@ -45,7 +45,7 @@ Google Fonts: For the 'Inter' typeface.
 To run this project locally, simply download or clone the repository and open the index.html file in your web browser.
 
 # Clone the repository
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/GOBU-M/portfolio-.git)
+git clone [https://github.com/GOBU-M/Portfolio]
 
 # Navigate to the project directory
 cd your-repo-name
@@ -76,4 +76,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 📫 Contact
 Gobu M - mgobu413@gmail.com
 
-Project Link: https://github.com/your-username/your-repo-name
+Project Link: https://github.com/GOBU-M/Portfolio
